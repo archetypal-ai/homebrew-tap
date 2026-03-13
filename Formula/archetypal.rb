@@ -1,22 +1,15 @@
 class Archetypal < Formula
   desc "Archetypal AI — An agentic coding tool powered by a living AI civilization"
   homepage "https://github.com/archetypal-ai/archetypal-ai"
-  url "https://registry.npmjs.org/@archetypal-ai/cli/-/cli-0.1.0.tgz"
-  sha256 ""
+  url "https://github.com/archetypal-ai/archetypal-ai/releases/download/v0.1.0/archetypal-ai-cli-0.1.0.tgz"
+  sha256 "af863702fa7ca2bb24211ed6f01fd18021cefe7ce143fffa2c9cb1a8ee117893"
   license :cannot_represent
-  head "https://github.com/archetypal-ai/archetypal-ai-internal.git", branch: "main"
 
   depends_on "node@20"
 
   def install
     system "npm", "install", *std_npm_args
-    bin.install_symlink libexec/"bin/archetypal"
-  end
-
-  def post_install
-    ohai "Archetypal AI installed!"
-    ohai "Run 'archetypal auth login' to authenticate"
-    ohai "Run 'archetypal' to start a session"
+    bin.install_symlink libexec.glob("bin/*")
   end
 
   test do
