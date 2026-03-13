@@ -1,9 +1,9 @@
 class Archetypal < Formula
   desc "Archetypal AI — An agentic coding tool powered by a living AI civilization"
   homepage "https://github.com/archetypal-ai/archetypal-ai"
-  url "https://github.com/archetypal-ai/archetypal-ai/releases/download/v1.6.0/archetypal-ai-cli-1.6.0.tgz"
-  sha256 "eb8a38a45ce54e987d0ded8cc3d9118722d4c88b1c7fcbe709dc1a2827555c4a"
-  version "1.6.0"
+  url "https://github.com/archetypal-ai/archetypal-ai/releases/download/v1.6.1/archetypal-ai-cli-1.6.1.tgz"
+  sha256 "c353c57003ad85a181f5ef91116edc6af3f1dabf1f66dc98a87235717cc154d6"
+  version "1.6.1"
   license :cannot_represent
 
   depends_on "node@20"
